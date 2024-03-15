@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0 20px; /* Agrega padding lateral de 20px */
+    background-color: #8BC34A; /* Fondo verdoso */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.character-container {
+    position: relative;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-right: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 300px; /* Ajusta la altura según tus necesidades */
+    margin-bottom: 20px; /* Agregado margin-bottom para separar del siguiente contenedor */
+}
+
+.character-container img {
+    max-width: 100%;
+    max-height: 80%; /* Ajustado para dejar espacio para el nombre y el botón */
+    border-radius: 8px;
+}
+
+.character-name {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    margin: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-size: 18px; /* Ajuste del tamaño del texto */
+    font-weight: bold;
+}
+
+.get-quote-btn {
+    margin-top: 10px;
+    padding: 8px 12px; /* Ajuste del tamaño del botón */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px; /* Ajuste del tamaño del texto del botón */
+    font-weight: bold;
+    
+}
+
+.get-quote-btn:hover {
+    background-color: #45a049;
+}
+.quote-hidden {
+    opacity: 0; /* Frase inicialmente invisible */
+    transition: opacity 0.5s ease-in-out; /* Agregamos una transición para suavizar el cambio de opacidad */
+}
+.intro-image{
+    
+    margin-top: 4100px;
+}
+
+.character-container.blur {
+    filter: blur(5px); /* Ajusta el valor de blur según tu preferencia */
+    transition: filter 0.5s ease; /* Agrega una transición suave */
+}
+#search {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 14px;
+    width: 250px; /* Ajusta el ancho según tus preferencias */
+}
+
+#search-btn {
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+#return-btn {
+    padding: 8px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px; /* Espaciado entre los botones */
+}
+#search-btn:hover {
+    background-color: #45a049;
+}
+#return-btn:hover {
+    background-color: #45a049;
+}
+
+
+

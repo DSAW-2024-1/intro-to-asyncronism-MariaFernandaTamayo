@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consulta de Frases de Los Simpsons</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <img src="img/intro.png" alt="Intro Image" class="intro-image" />
+    <!-- Agregamos el campo de búsqueda -->
+    <div class="search-container">
+      <label for="search">Buscar por nombre:</label>
+      <input
+        type="text"
+        id="search"
+        name="search"
+        placeholder="Ingrese el nombre del personaje"
+      />
+      <button id="search-btn" class="search-btn">Buscar</button>
+      <button id="return-btn" class="search-btn" style="display: none">
+        Volver
+      </button>
+    </div>
+    <div id="not-found-message" style="display: none">
+      <p>No se encontraron personajes con esa letra.</p>
+    </div>
+    <div class="row">
+      <!-- Homero -->
+      <div class="character-container">
+        <img src="img/Homero.jpg" alt="Homero" />
+        <p class="character-name">Homero Simpson</p>
+        <button class="get-quote-btn homero-btn">Traer Frase</button>
+      </div>
+
+      <!-- Marge -->
+      <div class="character-container">
+        <img src="img/marge.jpg" alt="Marge" />
+        <p class="character-name">Marge Simpson</p>
+        <button class="get-quote-btn marge-btn">Traer Frase</button>
+      </div>
+
+      <!-- Lisa -->
+      <div class="character-container">
+        <img src="img/lisa.png" alt="Lisa" />
+        <p class="character-name">Lisa Simpson</p>
+        <button class="get-quote-btn lisa-btn">Traer Frase</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Bart -->
+      <div class="character-container">
+        <img src="img/bart.png" alt="Bart" />
+        <p class="character-name">Bart Simpson</p>
+        <button class="get-quote-btn bart-btn">Traer Frase</button>
+      </div>
+
+      <!-- Bola de Nieve -->
+      <div class="character-container">
+        <img src="img/BolaNieve.jpg" alt="Bola de Nieve" />
+        <p class="character-name">Bola de Nieve</p>
+        <button class="get-quote-btn bola-btn">Traer Frase</button>
+      </div>
+
+      <!-- Ayudante de Santa -->
+      <div class="character-container">
+        <img src="img/AyudanteSanta.jpg" alt="Ayudante de Santa" />
+        <p class="character-name">Ayudante de Santa</p>
+        <button class="get-quote-btn ayudante-btn">Traer Frase</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Abraham -->
+      <div class="character-container">
+        <img src="img/Abraham.png" alt="Abraham" />
+        <p class="character-name">Abraham Simpson</p>
+        <button class="get-quote-btn abraham-btn">Traer Frase</button>
+      </div>
+
+      <!-- Maggie -->
+      <div class="character-container">
+        <img src="img/Maggie.jpg" alt="Maggie" />
+        <p class="character-name">Maggie Simpson</p>
+        <button class="get-quote-btn maggie-btn">Traer Frase</button>
+      </div>
+
+      <!-- Flanders -->
+      <div class="character-container">
+        <img src="img/flanders.jpg" alt="Flanders" />
+        <p class="character-name">Ned Flanders</p>
+        <button class="get-quote-btn flanders-btn">Traer Frase</button>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Rod -->
+      <div class="character-container">
+        <img src="img/Rod.jpg" alt="Rod" />
+        <p class="character-name">Rod Flanders</p>
+        <button class="get-quote-btn rod-btn">Traer Frase</button>
+      </div>
+
+      <!-- Todd -->
+      <div class="character-container">
+        <img src="img/Todd.jpg" alt="Todd" />
+        <p class="character-name">Todd Flanders</p>
+        <button class="get-quote-btn todd-btn">Traer Frase</button>
+      </div>
+
+      <!-- Milhouse -->
+      <div class="character-container">
+        <img src="img/Milhouse.jpg" alt="Milhouse" />
+        <p class="character-name">Milhouse Van Houten</p>
+        <button class="get-quote-btn milhouse-btn">Traer Frase</button>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Martin -->
+      <div class="character-container">
+        <img src="img/Martin.jpg" alt="Martin" />
+        <p class="character-name">Martin Prince</p>
+        <button class="get-quote-btn martin-btn">Traer Frase</button>
+      </div>
+
+      <!-- Nelson -->
+      <div class="character-container">
+        <img src="img/Nelson.jpg" alt="Nelson" />
+        <p class="character-name">Nelson Muntz</p>
+        <button class="get-quote-btn nelson-btn">Traer Frase</button>
+      </div>
+
+      <!-- Rafa -->
+      <div class="character-container">
+        <img src="img/Rafa.jpg" alt="Rafa" />
+        <p class="character-name">Rafa Górgory</p>
+        <button class="get-quote-btn rafa-btn">Traer Frase</button>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Smithers -->
+      <div class="character-container">
+        <img src="img/Smithers.jpg" alt="Smithers" />
+        <p class="character-name">Waylon Smithers</p>
+        <button class="get-quote-btn smithers-btn">Traer Frase</button>
+      </div>
+
+      <!-- Burns -->
+      <div class="character-container">
+        <img src="img/Burns.jpg" alt="Burns" />
+        <p class="character-name">Charles Montgomery Burns</p>
+        <button class="get-quote-btn burns-btn">Traer Frase</button>
+      </div>
+
+      <!-- Alcalde Joe Quimby -->
+      <div class="character-container">
+        <img src="img/Alcalde.jpg" alt="Alcalde Joe Quimby" />
+        <p class="character-name">Alcalde Joe Quimby</p>
+        <button class="get-quote-btn quimby-btn">Traer Frase</button>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Willy -->
+      <div class="character-container">
+        <img src="img/Willy.jpg" alt="Willy" />
+        <p class="character-name">Willy</p>
+        <button class="get-quote-btn willy-btn">Traer Frase</button>
+      </div>
+
+      <!-- Skinner -->
+      <div class="character-container">
+        <img src="img/Skinner.jpg" alt="Skinner" />
+        <p class="character-name">Seymour Skinner</p>
+        <button class="get-quote-btn skinner-btn">Traer Frase</button>
+      </div>
+
+      <!-- Edna -->
+      <div class="character-container">
+        <img src="img/Edna.jpg" alt="Edna" />
+        <p class="character-name">Edna Krabappel</p>
+        <button class="get-quote-btn edna-btn">Traer Frase</button>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Timothy -->
+      <div class="character-container">
+        <img src="img/Timothy.jpg" alt="Timothy" />
+        <p class="character-name">Timothy Lovejoy</p>
+        <button class="get-quote-btn timothy-btn">Traer Frase</button>
+      </div>
+
+      <!-- Selma -->
+      <div class="character-container">
+        <img src="img/Selma.png" alt="Selma" />
+        <p class="character-name">Selma Bouvier</p>
+        <button class="get-quote-btn selma-btn">Traer Frase</button>
+      </div>
+
+      <!-- Patty -->
+      <div class="character-container">
+        <img src="img/Patty.jpg" alt="Patty" />
+        <p class="character-name">Patty Bouvier</p>
+        <button class="get-quote-btn patty-btn">Traer Frase</button>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Mona -->
+      <div class="character-container">
+        <img src="img/Mona.png" alt="Mona" />
+        <p class="character-name">Mona Simpson</p>
+        <button class="get-quote-btn mona-btn">Traer Frase</button>
+      </div>
+
+      <!-- Manjula -->
+      <div class="character-container">
+        <img src="img/Manjula.jpg" alt="Manjula" />
+        <p class="character-name">Manjula Nahasapeemapetilon</p>
+        <button class="get-quote-btn manjula-btn">Traer Frase</button>
+      </div>
+
+      <!-- Apu -->
+      <div class="character-container">
+        <img src="img/Apu.jpg" alt="Apu" />
+        <p class="character-name">Apu Nahasapeemapetilon</p>
+        <button class="get-quote-btn apu-btn">Traer Frase</button>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Moe -->
+      <div class="character-container">
+        <img src="img/moe.jpg" alt="Moe" />
+        <p class="character-name">Moe Szyslak</p>
+        <button class="get-quote-btn moe-btn">Traer Frase</button>
+      </div>
+
+      <!-- Barney -->
+      <div class="character-container">
+        <img src="img/barney.jpg" alt="Barney" />
+        <p class="character-name">Barney Gumble</p>
+        <button class="get-quote-btn barney-btn">Traer Frase</button>
+      </div>
+
+      <!-- Cletus -->
+      <div class="character-container">
+        <img src="img/cletus.jpg" alt="Cletus" />
+        <p class="character-name">Cletus Spuckler</p>
+        <button class="get-quote-btn cletus-btn">Traer Frase</button>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Luann Van Houten -->
+      <div class="character-container">
+        <img src="img/LuannV.png" alt="Luann Van Houten" />
+        <p class="character-name">Luann Van Houten</p>
+        <button class="get-quote-btn luann-btn">Traer Frase</button>
+      </div>
+
+      <!-- Kirk Van Houten -->
+      <div class="character-container">
+        <img src="img/KirkV.jpg" alt="Kirk Van Houten" />
+        <p class="character-name">Kirk Van Houten</p>
+        <button class="get-quote-btn kirk-btn">Traer Frase</button>
+      </div>
+
+      <!-- Clancy Wiggum -->
+      <div class="character-container">
+        <img src="img/Clancy.jpg" alt="Clancy Wiggum" />
+        <p class="character-name">Clancy Wiggum</p>
+        <button class="get-quote-btn gorgory-btn">Traer Frase</button>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Lenny Leonard -->
+      <div class="character-container">
+        <img src="img/lenny.png" alt="Lenny Leonard" />
+        <p class="character-name">Lenny Leonard</p>
+        <button class="get-quote-btn lenny-btn">Traer Frase</button>
+      </div>
+
+      <!-- Carl Carlson -->
+      <div class="character-container">
+        <img src="img/carl.jpg" alt="Carl Carlson" />
+        <p class="character-name">Carl Carlson</p>
+        <button class="get-quote-btn carl-btn">Traer Frase</button>
+      </div>
+
+      <!-- Bob Patiño -->
+      <div class="character-container">
+        <img src="img/bobPatiño.jpg" alt="Bob Patiño" />
+        <p class="character-name">Bob Patiño</p>
+        <button class="get-quote-btn bob-btn">Traer Frase</button>
+      </div>
+    </div>
+
+    <div id="quote-container" class="quote-hidden"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

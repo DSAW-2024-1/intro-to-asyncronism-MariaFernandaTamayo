@@ -10,6 +10,8 @@
 
 # La página desplegada no carga algunas de las imagenes, pero en local se ve perfecto, la funcionalidad sigue siendo la misma. Adjunto una imagen de la vista local inicial.
 
+# Aún así, las imagenes que no cargan, al darle click al boton de "traer frase" la imagen si aparece.
+
 ## Funcionalidades
 
 - Crear una aplicación web que se comunique con la API propuesta: https://thesimpsonsquoteapi.glitch.me/
